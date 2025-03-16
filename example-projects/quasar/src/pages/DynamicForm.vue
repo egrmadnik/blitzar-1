@@ -4,14 +4,14 @@ import BlitzForm from '../components/BlitzForm.vue'
 
 const formData = ref({
   productType: '',
-  quantity: 1
+  quantity: 1,
 })
 
 const productTypes = [
   { value: 'electronics', label: 'Electronics' },
   { value: 'clothing', label: 'Clothing' },
   { value: 'furniture', label: 'Furniture' },
-  { value: 'books', label: 'Books' }
+  { value: 'books', label: 'Books' },
 ]
 
 // Dynamic fields based on selected product type
@@ -21,14 +21,14 @@ const electronicFields = [
     span: 1,
     component: 'QInput',
     label: 'Brand',
-    required: true
+    required: true,
   },
   {
     id: 'model',
     span: 1,
     component: 'QInput',
     label: 'Model',
-    required: true
+    required: true,
   },
   {
     id: 'warranty',
@@ -39,9 +39,9 @@ const electronicFields = [
       { value: '1year', label: '1 Year' },
       { value: '2year', label: '2 Years' },
       { value: '3year', label: '3 Years' },
-      { value: 'lifetime', label: 'Lifetime' }
-    ]
-  }
+      { value: 'lifetime', label: 'Lifetime' },
+    ],
+  },
 ]
 
 const clothingFields = [
@@ -55,24 +55,24 @@ const clothingFields = [
       { value: 's', label: 'Small' },
       { value: 'm', label: 'Medium' },
       { value: 'l', label: 'Large' },
-      { value: 'xl', label: 'Extra Large' }
+      { value: 'xl', label: 'Extra Large' },
     ],
-    required: true
+    required: true,
   },
   {
     id: 'color',
     span: 1,
     component: 'QInput',
     label: 'Color',
-    required: true
+    required: true,
   },
   {
     id: 'material',
     span: 1,
     component: 'QInput',
     label: 'Material',
-    required: true
-  }
+    required: true,
+  },
 ]
 
 const furnitureFields = [
@@ -81,22 +81,22 @@ const furnitureFields = [
     span: 1,
     component: 'QInput',
     label: 'Dimensions (WxDxH)',
-    required: true
+    required: true,
   },
   {
     id: 'material',
     span: 1,
     component: 'QInput',
     label: 'Material',
-    required: true
+    required: true,
   },
   {
     id: 'assemblyRequired',
     span: 1,
     component: 'QToggle',
     label: 'Assembly Required',
-    defaultValue: false
-  }
+    defaultValue: false,
+  },
 ]
 
 const bookFields = [
@@ -105,14 +105,14 @@ const bookFields = [
     span: 1,
     component: 'QInput',
     label: 'Author',
-    required: true
+    required: true,
   },
   {
     id: 'isbn',
     span: 1,
     component: 'QInput',
     label: 'ISBN',
-    required: true
+    required: true,
   },
   {
     id: 'format',
@@ -123,10 +123,10 @@ const bookFields = [
       { value: 'hardcover', label: 'Hardcover' },
       { value: 'paperback', label: 'Paperback' },
       { value: 'ebook', label: 'E-Book' },
-      { value: 'audiobook', label: 'Audiobook' }
+      { value: 'audiobook', label: 'Audiobook' },
     ],
-    required: true
-  }
+    required: true,
+  },
 ]
 
 // Base schema that doesn't change
@@ -138,14 +138,14 @@ const baseSchema = [
     label: 'Product Type',
     subLabel: 'Select a product category',
     options: productTypes,
-    required: true
+    required: true,
   },
   {
     id: 'productName',
     span: 1,
     component: 'QInput',
     label: 'Product Name',
-    required: true
+    required: true,
   },
   {
     id: 'price',
@@ -155,7 +155,7 @@ const baseSchema = [
     type: 'number',
     prefix: '$',
     required: true,
-    parseInput: val => Number(val)
+    parseInput: (val) => Number(val),
   },
   {
     id: 'quantity',
@@ -165,15 +165,15 @@ const baseSchema = [
     type: 'number',
     required: true,
     min: 1,
-    parseInput: val => Number(val)
-  }
+    parseInput: (val) => Number(val),
+  },
 ]
 
 // Dynamic schema based on product type
 const dynamicSchema = computed(() => {
   let additionalFields = []
-  
-  switch (formData.value.productType) {
+  console.log(formData.value.productType.value)
+  switch (formData.value.productType.value) {
     case 'electronics':
       additionalFields = electronicFields
       break
@@ -189,14 +189,14 @@ const dynamicSchema = computed(() => {
     default:
       additionalFields = []
   }
-  
+
   return [...baseSchema, ...additionalFields]
 })
 
 const resetForm = () => {
   formData.value = {
     productType: '',
-    quantity: 1
+    quantity: 1,
   }
 }
 
