@@ -23,10 +23,6 @@ Development Server: The Quasar dev server now runs successfully with Vite.
 
 [Quasar Example](https://67d707e191f46dbc990f9992--blitzar-quasar-examples.netlify.app/) - Showcase of BlitzForm and BlitzListForm components in Quasar
 
-### Vue
-
-[Vue Example](https://blitzar.cycraft.co/example-projects/vue) - Original Vue.js example implementation
-
 # Blitzar
 
 Generate Vue Forms and Data-tables fast with a simple JSON-like syntax ⚡️
