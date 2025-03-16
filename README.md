@@ -1,3 +1,14 @@
+### Configuration Files:
+
+Updated all configuration files to use ESM syntax (babel.config.js, quasar.config.js, .postcssrc.js, etc.)
+Created a vite.config.js to work with the Vite-based build system
+Added "type": "module" to package.json to specify ESM mode
+Component Integration:
+Created a local version of the BlitzForm component to avoid monorepo dependency resolution issues
+Updated import paths to use relative paths for local components
+HTML Structure:
+Added an index.html file required by Vite-based applicatio
+
 ![hero](media/blitzar-hero.png?raw=true)
 
 # Blitzar
