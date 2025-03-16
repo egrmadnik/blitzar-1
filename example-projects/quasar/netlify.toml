@@ -1,0 +1,10 @@
+[build]
+  base = "example-projects/quasar"
+  publish = "dist/spa"
+  command = "npm run build"
+
+# Handle SPA routing
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
