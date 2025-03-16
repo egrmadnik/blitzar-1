@@ -18,42 +18,49 @@
           <q-item-section>Home</q-item-section>
         </q-item>
 
-        <q-item clickable v-ripple to="/list-form" exact>
+        <q-item clickable v-ripple to="/blitz/list-form" exact>
           <q-item-section avatar>
             <q-icon name="format_list_bulleted" />
           </q-item-section>
           <q-item-section>List Form Example</q-item-section>
         </q-item>
 
-        <q-item clickable v-ripple to="/blitz-form" exact>
+        <q-item clickable v-ripple to="/blitz/blitz-form" exact>
           <q-item-section avatar>
             <q-icon name="assignment" />
           </q-item-section>
           <q-item-section>Blitz Form Examples</q-item-section>
         </q-item>
 
-        <q-item clickable v-ripple to="/filters-example" exact>
+        <q-item clickable v-ripple to="/blitz/filters-example" exact>
           <q-item-section avatar>
             <q-icon name="filter_list" />
           </q-item-section>
           <q-item-section>Blitz Filters Examples</q-item-section>
         </q-item>
 
-        <q-item clickable v-ripple to="/validation-example" exact>
+        <q-item clickable v-ripple to="/blitz/table-example" exact>
+          <q-item-section avatar>
+            <q-icon name="table_chart" />
+          </q-item-section>
+          <q-item-section>Blitz Table Examples</q-item-section>
+        </q-item>
+
+        <q-item clickable v-ripple to="/blitz/validation-example" exact>
           <q-item-section avatar>
             <q-icon name="check_circle" />
           </q-item-section>
           <q-item-section>Form Validation</q-item-section>
         </q-item>
 
-        <q-item clickable v-ripple to="/dynamic-form" exact>
+        <q-item clickable v-ripple to="/blitz/dynamic-form" exact>
           <q-item-section avatar>
             <q-icon name="autorenew" />
           </q-item-section>
           <q-item-section>Dynamic Form</q-item-section>
         </q-item>
 
-        <q-item clickable v-ripple to="/conditional-fields" exact>
+        <q-item clickable v-ripple to="/blitz/conditional-fields" exact>
           <q-item-section avatar>
             <q-icon name="visibility" />
           </q-item-section>

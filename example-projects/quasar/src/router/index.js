@@ -27,29 +27,33 @@ export default route(function (/* { store, ssrContext } */) {
             component: () => import('../pages/Index.vue')
           },
           {
-            path: 'list-form',
+            path: 'blitz/list-form',
             component: () => import('../pages/ListFormExample.vue')
           },
           {
-            path: 'blitz-form',
+            path: 'blitz/blitz-form',
             component: () => import('../pages/BlitzFormExample.vue')
           },
           {
-            path: 'filters-example',
+            path: 'blitz/filters-example',
             component: () => import('../pages/FiltersExample.vue')
           },
           {
-            path: 'validation-example',
+            path: 'blitz/table-example',
+            component: () => import('../pages/TableExample.vue')
+          },
+          {
+            path: 'blitz/validation-example',
             component: () => import('../pages/ValidationExample.vue'),
           },
           {
-            path: 'dynamic-form',
+            path: 'blitz/dynamic-form',
             component: () => import('../pages/DynamicForm.vue'),
           },
           {
-            path: 'conditional-fields',
+            path: 'blitz/conditional-fields',
             component: () => import('../pages/ConditionalFields.vue'),
-          },
+          }
         ]
       },
 
