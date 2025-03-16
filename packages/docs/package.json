@@ -18,10 +18,11 @@
     "@planetar/code-block": "^1.0.2",
     "blitzar": "^1.2.4",
     "is-what": "^4.1.7",
+    "vite": "6.2.2",
     "vue-final-modal": "^3.4.4"
   },
   "devDependencies": {
-    "vitepress": "0.20.10"
+    "vitepress": "^0.1.1"
   },
   "keywords": [
     "blitzar",

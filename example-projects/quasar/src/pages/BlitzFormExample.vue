@@ -1,17 +1,34 @@
 <script>
 import { defineComponent, ref } from 'vue'
-import { BlitzForm } from 'blitzar'
-import 'blitzar/dist/style.css'
+// Import the local BlitzForm component
+import BlitzForm from '../components/BlitzForm.vue'
 
 // Make sure QInput, QToggle, etc. are globally registered via `quasar.conf.js`!
 
 const schema = [
   {
-    id: 'name',
+    id: 'ime',
     span: 1,
     component: 'QInput', // make sure it's registered in `quasar.conf.js`
-    label: 'Superhero name',
-    subLabel: 'Think of something cool.',
+    label: 'Ime uporabnika',
+    subLabel: 'Vnesi ime uporabnika',
+    required: true,
+  },
+  {
+    id: 'priimek',
+    span: 1,
+    component: 'QInput', // make sure it's registered in `quasar.conf.js`
+    label: 'Priimek uporabnika',
+    subLabel: 'Vnesi ime uporabnika',
+    required: true,
+  },
+  {
+    id: 'rojen',
+    span: 1,
+    component: 'QInput', // make sure it's registered in `quasar.conf.js`
+    type: 'date',
+    label: 'Rojen',
+    subLabel: 'Vnesi ime uporabnika',
     required: true,
   },
   {
@@ -29,7 +46,7 @@ const schema = [
   },
   {
     id: 'stamina',
-    span: 2,
+    span: 1,
     component: 'QSlider', // make sure it's registered in `quasar.conf.js`
     label: 'Stamina',
     subLabel: (value) => `value: ${value}`,
@@ -133,7 +150,7 @@ export default defineComponent({
     <BlitzForm
       v-model="formData"
       :schema="schema"
-      :columnCount="2"
+      :columnCount="3"
       :internalLabels="true"
       gridGap="2rem"
     />

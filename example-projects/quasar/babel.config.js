@@ -1,15 +1,23 @@
+// This file runs in a Node context
 
-
-module.exports = api => {
+/**
+ * @param {object} api - Babel API
+ * @returns {object} Babel configuration
+ */
+export default function babelConfig(api) {
   return {
     presets: [
       [
-        '@quasar/babel-preset-app',
-        api.caller(caller => caller && caller.target === 'node')
-          ? { targets: { node: 'current' } }
-          : {}
+        '@babel/preset-env',
+        {
+          modules: false,
+          useBuiltIns: 'usage',
+          corejs: 3,
+          targets: api.caller(caller => caller && caller.target === 'node')
+            ? { node: 'current' }
+            : { browsers: ['last 2 versions', 'not dead', 'not IE 11'] }
+        }
       ]
     ]
   }
 }
-

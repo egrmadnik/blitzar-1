@@ -5,20 +5,30 @@
   "productName": "Blitzar Example Quasar",
   "author": "Luca Ban - Mesqueeb",
   "private": true,
+  "type": "module",
   "scripts": {
     "test": "echo \"No test specified\" && exit 0",
-    "dev": "quasar dev"
+    "dev": "quasar dev",
+    "build": "quasar build"
   },
   "dependencies": {
-    "@quasar/extras": "^1.0.0",
-    "blitzar": "^1.1.6",
+    "@blitzar/components": "^1.2.4",
+    "@blitzar/types": "^1.2.4",
+    "@blitzar/utils": "^1.2.4",
+    "@quasar/extras": "^1.16.5",
+    "blitzar": "^1.2.4",
     "core-js": "^3.6.5",
-    "quasar": "^2.0.0",
-    "vue": "^3.2.29",
+    "quasar": "^2.14.0",
+    "vue": "^3.3.4",
     "vue-router": "^4.0.0"
   },
   "devDependencies": {
-    "@quasar/app": "^3.0.0"
+    "@quasar/app-vite": "^2.1.4",
+    "@quasar/vite-plugin": "^1.9.0",
+    "@typescript-eslint/parser": "^8.26.1",
+    "@vitejs/plugin-vue": "^5.2.1",
+    "autoprefixer": "^10.4.21",
+    "vite": "^6.2.2"
   },
   "browserslist": [
     "last 10 Chrome versions",
@@ -32,8 +42,7 @@
     "last 5 Opera versions"
   ],
   "engines": {
-    "node": ">= 12.22.1",
-    "npm": ">= 6.13.4",
-    "yarn": ">= 1.21.1"
+    "node": ">= 18",
+    "npm": ">= 9.0.0"
   }
 }
