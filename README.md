@@ -21,7 +21,9 @@ Development Server: The Quasar dev server now runs successfully with Vite.
 
 ### Quasar
 
-[Quasar Example](https://67d707e191f46dbc990f9992--blitzar-quasar-examples.netlify.app/) - Showcase of BlitzForm and BlitzListForm components in Quasar
+[Live Demo](https://67d707e191f46dbc990f9992--blitzar-quasar-examples.netlify.app/) - Showcase of BlitzForm and BlitzListForm components in Quasar
+
+[Source Code](https://github.com/egrmadnik/blitzar-1/tree/production/example-projects/quasar) - View the source code for the Quasar example project
 
 # Blitzar
 
