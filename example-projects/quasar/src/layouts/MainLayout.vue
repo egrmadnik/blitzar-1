@@ -2,34 +2,34 @@
   <q-layout view="hHh lpR fFf">
     <q-header elevated class="bg-primary text-white">
       <q-toolbar>
-        <q-btn
-          flat
-          dense
-          round
-          icon="menu"
-          aria-label="Menu"
-          @click="toggleLeftDrawer"
-        />
-        <q-toolbar-title>
-          Blitzar Form Examples
-        </q-toolbar-title>
+        <q-btn flat dense round icon="menu" aria-label="Menu" @click="toggleLeftDrawer" />
+        <q-toolbar-title> Blitzar Form Examples </q-toolbar-title>
       </q-toolbar>
     </q-header>
 
-    <q-drawer
-      v-model="leftDrawerOpen"
-      show-if-above
-      bordered
-      class="bg-grey-1"
-    >
+    <q-drawer v-model="leftDrawerOpen" show-if-above bordered class="bg-grey-1">
       <q-list>
-        <q-item-label header>Example Pages</q-item-label>
-        
+        <q-item-label header>Essential Links</q-item-label>
+
         <q-item clickable v-ripple to="/" exact>
           <q-item-section avatar>
-            <q-icon name="description" />
+            <q-icon name="home" />
           </q-item-section>
-          <q-item-section>Basic Form</q-item-section>
+          <q-item-section>Home</q-item-section>
+        </q-item>
+
+        <q-item clickable v-ripple to="/list-form" exact>
+          <q-item-section avatar>
+            <q-icon name="format_list_bulleted" />
+          </q-item-section>
+          <q-item-section>List Form Example</q-item-section>
+        </q-item>
+
+        <q-item clickable v-ripple to="/blitz-form" exact>
+          <q-item-section avatar>
+            <q-icon name="assignment" />
+          </q-item-section>
+          <q-item-section>Blitz Form Examples</q-item-section>
         </q-item>
 
         <q-item clickable v-ripple to="/validation-example" exact>
@@ -41,17 +41,18 @@
 
         <q-item clickable v-ripple to="/dynamic-form" exact>
           <q-item-section avatar>
-            <q-icon name="dynamic_form" />
+            <q-icon name="autorenew" />
           </q-item-section>
           <q-item-section>Dynamic Form</q-item-section>
         </q-item>
 
         <q-item clickable v-ripple to="/conditional-fields" exact>
           <q-item-section avatar>
-            <q-icon name="rule" />
+            <q-icon name="visibility" />
           </q-item-section>
           <q-item-section>Conditional Fields</q-item-section>
         </q-item>
+
       </q-list>
     </q-drawer>
 
@@ -62,11 +63,11 @@
 </template>
 
 <script setup>
-import { ref } from 'vue';
+import { ref } from 'vue'
 
-const leftDrawerOpen = ref(false);
+const leftDrawerOpen = ref(false)
 
 function toggleLeftDrawer() {
-  leftDrawerOpen.value = !leftDrawerOpen.value;
+  leftDrawerOpen.value = !leftDrawerOpen.value
 }
 </script>
