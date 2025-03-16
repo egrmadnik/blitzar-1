@@ -7,7 +7,13 @@ Component Integration:
 Created a local version of the BlitzForm component to avoid monorepo dependency resolution issues
 Updated import paths to use relative paths for local components
 HTML Structure:
-Added an index.html file required by Vite-based applicatio
+Added an index.html file required by Vite-based applications
+
+### Resolved Issues:
+
+Monorepo Dependency Resolution: Instead of trying to use the workspace references directly (which would have required building all the packages), we created a simplified local version of the BlitzForm component.
+ESM Compatibility: All JavaScript files now use ESM syntax with proper imports/exports, making them compatible with Node.js v20.
+Development Server: The Quasar dev server now runs successfully with Vite.
 
 ![hero](media/blitzar-hero.png?raw=true)
 
