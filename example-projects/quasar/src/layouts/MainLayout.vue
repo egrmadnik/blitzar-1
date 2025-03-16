@@ -46,6 +46,13 @@
           <q-item-section>Blitz Table Examples</q-item-section>
         </q-item>
 
+        <q-item clickable v-ripple to="/blitz/input-example" exact>
+          <q-item-section avatar>
+            <q-icon name="input" />
+          </q-item-section>
+          <q-item-section>Blitz Input Examples</q-item-section>
+        </q-item>
+
         <q-item clickable v-ripple to="/blitz/validation-example" exact>
           <q-item-section avatar>
             <q-icon name="check_circle" />

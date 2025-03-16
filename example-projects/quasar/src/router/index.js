@@ -47,6 +47,10 @@ export default route(function (/* { store, ssrContext } */) {
             component: () => import('../pages/ValidationExample.vue'),
           },
           {
+            path: 'blitz/input-example',
+            component: () => import('../pages/InputExample.vue'),
+          },
+          {
             path: 'blitz/dynamic-form',
             component: () => import('../pages/DynamicForm.vue'),
           },

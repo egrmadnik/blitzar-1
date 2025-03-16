@@ -19,7 +19,7 @@
                 <li>Action buttons (save, edit, delete, etc.)</li>
                 <li>Form validation</li>
               </ul>
-              <q-btn color="primary" label="View Examples" to="/blitz-form" class="q-mt-sm" />
+              <q-btn color="primary" label="View Examples" to="/blitz/blitz-form" class="q-mt-sm" />
             </q-card-section>
           </q-card>
         </div>
@@ -34,7 +34,44 @@
                 <li>Advanced lists with action buttons</li>
                 <li>Readonly list display</li>
               </ul>
-              <q-btn color="secondary" label="View Examples" to="/list-form" class="q-mt-sm" />
+              <q-btn
+                color="secondary"
+                label="View Examples"
+                to="/blitz/list-form"
+                class="q-mt-sm"
+              />
+            </q-card-section>
+          </q-card>
+        </div>
+
+        <div class="col-12 col-md-6">
+          <q-card class="feature-card">
+            <q-card-section>
+              <div class="text-h5 q-mb-sm">BlitzInput Examples</div>
+              <p>Discover how to use the BlitzInput component for form controls:</p>
+              <ul>
+                <li>Various input types (text, email, select, etc.)</li>
+                <li>Input validation and error states</li>
+                <li>Input states (loading, success, error)</li>
+                <li>Form integration examples</li>
+              </ul>
+              <q-btn color="teal" label="View Examples" to="/blitz/input-example" class="q-mt-sm" />
+            </q-card-section>
+          </q-card>
+        </div>
+
+        <div class="col-12 col-md-6">
+          <q-card class="feature-card">
+            <q-card-section>
+              <div class="text-h5 q-mb-sm">BlitzTable Examples</div>
+              <p>Explore the powerful BlitzTable component features:</p>
+              <ul>
+                <li>Sortable and filterable tables</li>
+                <li>Custom table styling</li>
+                <li>Row selection and actions</li>
+                <li>Pagination and data management</li>
+              </ul>
+              <q-btn color="blue" label="View Examples" to="/blitz/table-example" class="q-mt-sm" />
             </q-card-section>
           </q-card>
         </div>
@@ -49,7 +86,33 @@
                 <li>Form-level validation</li>
                 <li>Custom validation messages</li>
               </ul>
-              <q-btn color="accent" label="View Examples" to="/validation-example" class="q-mt-sm" />
+              <q-btn
+                color="accent"
+                label="View Examples"
+                to="blitz/validation-example"
+                class="q-mt-sm"
+              />
+            </q-card-section>
+          </q-card>
+        </div>
+
+        <div class="col-12 col-md-6">
+          <q-card class="feature-card">
+            <q-card-section>
+              <div class="text-h5 q-mb-sm">BlitzFilter Examples</div>
+              <p>Discover how to use powerful filtering components:</p>
+              <ul>
+                <li>Simple and advanced filters</li>
+                <li>Filter combinations and presets</li>
+                <li>Saving and loading filter configurations</li>
+                <li>Integration with BlitzTable</li>
+              </ul>
+              <q-btn
+                color="deep-purple"
+                label="View Examples"
+                to="/blitz/filters-example"
+                class="q-mt-sm"
+              />
             </q-card-section>
           </q-card>
         </div>
@@ -64,7 +127,12 @@
                 <li>Dynamic schema modifications</li>
                 <li>Dependent field validation</li>
               </ul>
-              <q-btn color="purple" label="View Examples" to="/conditional-fields" class="q-mt-sm" />
+              <q-btn
+                color="purple"
+                label="View Examples"
+                to="/blitz/conditional-fields"
+                class="q-mt-sm"
+              />
             </q-card-section>
           </q-card>
         </div>
