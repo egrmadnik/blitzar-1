@@ -35,6 +35,10 @@ export default route(function (/* { store, ssrContext } */) {
             component: () => import('../pages/BlitzFormExample.vue')
           },
           {
+            path: 'filters-example',
+            component: () => import('../pages/FiltersExample.vue')
+          },
+          {
             path: 'validation-example',
             component: () => import('../pages/ValidationExample.vue'),
           },

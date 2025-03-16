@@ -32,6 +32,13 @@
           <q-item-section>Blitz Form Examples</q-item-section>
         </q-item>
 
+        <q-item clickable v-ripple to="/filters-example" exact>
+          <q-item-section avatar>
+            <q-icon name="filter_list" />
+          </q-item-section>
+          <q-item-section>Blitz Filters Examples</q-item-section>
+        </q-item>
+
         <q-item clickable v-ripple to="/validation-example" exact>
           <q-item-section avatar>
             <q-icon name="check_circle" />
