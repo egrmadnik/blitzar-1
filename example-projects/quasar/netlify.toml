@@ -1,8 +1,13 @@
 [build]
   base = "example-projects/quasar"
-  publish = "dist/spa"
+  publish = "./dist/spa"
   command = "npm run build"
 
+# This fixes the issue with monorepo setup
+[build.environment]
+  NODE_VERSION = "20.16.0"
+  NPM_FLAGS = "--no-optional --legacy-peer-deps"
+  
 # Handle SPA routing
 [[redirects]]
   from = "/*"
