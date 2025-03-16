@@ -1,5 +1,5 @@
-<script>
-import { defineComponent, ref } from 'vue'
+<script setup>
+import { ref } from 'vue'
 // Import the local BlitzForm component
 import BlitzForm from '../components/BlitzForm.vue'
 
@@ -136,13 +136,7 @@ const schema = [
   },
 ]
 
-export default defineComponent({
-  components: { BlitzForm },
-  setup() {
-    const formData = ref({})
-    return { formData, schema }
-  },
-})
+const formData = ref({})
 </script>
 
 <template>
