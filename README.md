@@ -17,6 +17,16 @@ Development Server: The Quasar dev server now runs successfully with Vite.
 
 ![hero](media/blitzar-hero.png?raw=true)
 
+## Example Projects
+
+### Quasar
+
+[Quasar Example](https://67d707e191f46dbc990f9992--blitzar-quasar-examples.netlify.app/)
+
+### Vue
+
+[Vue Example](https://blitzar.cycraft.co/example-projects/vue)
+
 # Blitzar
 
 Generate Vue Forms and Data-tables fast with a simple JSON-like syntax ⚡️
