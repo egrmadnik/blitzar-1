@@ -10,9 +10,44 @@ This example demonstrates how to use Blitzar components with Quasar in a modern 
 2. Implement Vue 3's Composition API with `<script setup>` syntax
 3. Use Vite as the build tool through @quasar/app-vite
 
+## Example Pages
+
+This project includes several example pages that demonstrate different form features.
+
+### Basic Form Example
+
+- The main example showing basic form field creation
+- Demonstrates field span and column configuration
+- Displays various Quasar input types (QInput, QSelect, QSlider, etc.)
+
+### Form Validation Example
+
+- Demonstrates various validation techniques
+- Email format validation
+- Password strength and confirmation matching
+- Age range validation
+- Required field validation with custom messages
+
+### Dynamic Form Example
+
+- Form fields change dynamically based on product type selection
+- Different fields for electronics, clothing, furniture, and books
+- Demonstrates using computed properties to generate schema on-the-fly
+
+### Conditional Fields Example
+
+- Shows/hides fields based on user input
+- Contact method selection changes required fields dynamically
+- Work experience toggle reveals/hides related fields
+- Number of previous jobs dynamically generates multiple job entry fields
+
+## Navigation
+
+The application uses a Quasar Layout with a sidebar navigation drawer to switch between examples.
+
 ## Vue 3 Composition API Implementation
 
-This project demonstrates modern Vue 3 practices by using the Composition API with the `<script setup>` syntax, which offers several advantages:
+This project demonstrates modern Vue 3 practices by using the Composition API with the `<script setup>` syntax, which offers several advantages.
 
 ### Benefits
 

@@ -25,6 +25,7 @@
     "@types/node": "^20.11.0",
     "@types/webpack-env": "^1.18.1",
     "@typescript-eslint/eslint-plugin": "^7.1.0",
+    "@typescript-eslint/parser": "^8.26.1",
     "@vitejs/plugin-vue": "^5.0.3",
     "@viteplay/plugin": "^0.2.5",
     "@viteplay/vue": "^0.2.5",

@@ -3,25 +3,27 @@ import { createRouter, createWebHistory } from 'vue-router'
 
 const routes = [
   {
-    path: '',
-    component: () => import('src/pages/BlitzFormExample.vue'),
-  },
-  {
     path: '/',
-    component: () => import('src/pages/BlitzFormExample.vue'),
-  },
-  {
-    path: '/blitz-form',
-    component: () => import('src/pages/BlitzFormExample.vue'),
-  },
-  {
-    path: '/blitz-table',
-    component: () => import('src/pages/BlitzFormExample.vue'),
-  },
-  {
-    path: '/blitz-list-form',
-    component: () => import('src/pages/BlitzFormExample.vue'),
-  },
+    component: () => import('src/layouts/MainLayout.vue'),
+    children: [
+      {
+        path: '',
+        component: () => import('src/pages/BlitzFormExample.vue'),
+      },
+      {
+        path: '/validation-example',
+        component: () => import('src/pages/ValidationExample.vue'),
+      },
+      {
+        path: '/dynamic-form',
+        component: () => import('src/pages/DynamicForm.vue'),
+      },
+      {
+        path: '/conditional-fields',
+        component: () => import('src/pages/ConditionalFields.vue'),
+      }
+    ]
+  }
 ]
 
 export default route(function (/* { store, ssrContext } */) {
